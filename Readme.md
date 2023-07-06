@@ -1,42 +1,37 @@
-# File Parser 
+# File Parser
 
-This program parses a text file to extract the last 8 mappings corresponding to each line that starts with "IN F", and outputs the extracted data to the console. It expects the lines starting with "IN F" to be followed by a number from 1 to 48. If any "IN F" entries are missing, it fills the corresponding space with empty strings.
+This program is designed to parse specific text files and extract particular pieces of information. It processes lines that start with "IN F" or "PU" and outputs the extracted data to the console.
 
 ## Libraries Used
 
-- `<iostream>`: For input-output stream. It is used to output the data to the console.
-- `<fstream>`: For file stream. It is used to handle file input.
+- `<iostream>`: For input-output streams, primarily used for console output.
+- `<fstream>`: For file streams, used to read from files.
 - `<string>`: For handling strings.
-- `<vector>`: For using vector data structure to store the extracted mappings.
-- `<sstream>`: For string stream, which is used to break down each line into individual elements.
+- `<vector>`: For using the vector data structure to store extracted data.
+- `<sstream>`: For string streams, used for string manipulations.
+- `<regex>`: For regular expressions, used for pattern matching within strings.
 
 ## Code Explanation
 
-1. **Include necessary libraries**: Necessary C++ standard libraries are included for handling file I/O, strings, vectors, and streams.
+1. **Include necessary libraries**: The necessary C++ standard libraries are included for handling file I/O, strings, vectors, regular expressions, and streams.
 
-2. **Open input file**: An input file stream is created and a text file is opened.
+2. **Open input file**: Input file streams are created and text files are opened for reading.
 
-3. **Check if the file is open**: If the file cannot be opened, an error message is printed to the console, and the program exits with a return code of 1.
+3. **Check if the file is open**: If the file cannot be opened, an error message is displayed on the console, and the program terminates.
 
-4. **Create an array to store the elements**: A vector named `elementsArray` is created to store the mappings extracted from the file.
+4. **Read and parse file**: The files are read line by line. Depending on the line prefix "IN F" or "PU", different parsing methods are employed:
 
-5. **Read and parse file**: The file is read line by line. For each line, it is checked if it starts with "IN F". If it does, the program proceeds to extract the number following "IN F" and the last 8 mappings from the line.
+    a. For lines starting with "IN F", the number following "IN F" and the last 8 mappings from the line are extracted. The extracted mappings are stored in a one-dimensional vector. If any "IN F" entries are missing, empty strings are added to the corresponding positions in the vector.
+    
+    b. For lines starting with "PU", six elements from each line are extracted and stored in a one-dimensional vector. The extracted elements are either names followed by a pattern within parentheses or the string "GND".
+    
+5. **Close the file**: The input file streams are closed after reading.
 
-6. **Fill in missing entries**: If any "IN F" entries are missing, empty strings are added to the corresponding positions in the array.
-
-7. **Store the extracted mappings**: The extracted mappings are stored in the `elementsArray`.
-
-8. **Close the file**: The input file stream is closed after reading.
-
-9. **Output the results**: The contents of the `elementsArray` are printed to the console along with the respective "IN F" number.
-
-10. **Print the size of the array**: The size of the `elementsArray` is printed to confirm it has 384 elements (48*8).
+6. **Output the results**: The contents of the vectors storing extracted data are printed to the console along with the respective prefixes ("IN F" or "PU").
 
 ## Usage
 
-1. Place the text file you want to parse in an accessible directory.
-2. Change the file path in the `ifstream file(...)` line of the code to the path of your file.
-3. Compile the program with a C++ compiler (e.g., g++).
+1. Place the text files you want to parse in an accessible directory.
+2. Update the `baseDir` variable and `fileNames` vector in the main function to reflect the directory and names of your files.
+3. Compile the program with a C++ compiler (e.g., `g++`).
 4. Run the program.
-
-
