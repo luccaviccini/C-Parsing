@@ -1,0 +1,100 @@
+# LATOME input mapping v03.00.00
+# Comments: ATLAS mapping (folder names changed)
+# AMCType: EMB
+# Side: A
+# QuadrantID: 0
+# AMCHashNumber: 0
+# CarrierID: 1
+# AMCNumberInCarrier: 1
+
+# Input information section
+# Number connected LTDBs: 2
+# Connected LTDBs: EMB(I01L)  EMB(I02R)  
+# Number connected input MTPs: 4
+# Number connected input fibers: 40
+# Input_ID LTDB_MTP_PIN RX_PIN SC1 ... SC8
+IN F3   I01L_01_10  RX01_03  B_1A_B1  B_2A_B1  B_4A_B1  B_3A_B1  B_6A_B1  B_5A_B1  B_8A_B1  B_7A_B1  
+IN F4   I01L_01_09  RX01_04  B_2A_M2  B_2A_M1  B_2A_M4  B_2A_M3  B_1A_M3  B_1A_M4  B_1A_M1  B_1A_M2  
+IN F5   I01L_01_08  RX01_05  B_3A_M1  B_3A_M2  B_3A_M4  B_3A_M3  B_4A_M4  B_4A_M3  B_4A_M2  B_4A_M1  
+IN F6   I01L_01_07  RX01_06  B_6A_F4  B_6A_F3  B_6A_F2  B_6A_F1  B_5A_F1  B_5A_F2  B_5A_F3  B_5A_F4  
+IN F7   I01L_01_06  RX01_07  B_7A_M1  B_7A_M2  B_7A_M3  B_7A_M4  B_8A_M3  B_8A_M4  B_8A_M2  B_8A_M1  
+IN F8   I01L_01_05  RX01_08  B_8A_P1  B_7A_P1  B_5A_P1  B_6A_P1  B_4A_P1  B_3A_P1  B_2A_P1  B_1A_P1  
+IN F9   I01L_01_04  RX01_09  B_5A_M1  B_5A_M2  B_5A_M3  B_5A_M4  B_6A_M4  B_6A_M3  B_6A_M1  B_6A_M2  
+IN F10  I01L_01_03  RX01_10  B_4A_F1  B_4A_F2  B_4A_F4  B_4A_F3  B_3A_F4  B_3A_F3  B_3A_F2  B_3A_F1  
+IN F11  I01L_01_02  RX01_11  B_7A_F1  B_7A_F2  B_7A_F3  B_7A_F4  B_8A_F1  B_8A_F2  B_8A_F4  B_8A_F3  
+IN F12  I01L_01_01  RX01_12  B_2A_F3  B_2A_F4  B_2A_F2  B_2A_F1  B_1A_F4  B_1A_F3  B_1A_F2  B_1A_F1  
+IN F15  I01L_04_10  RX02_03  B_1B_F2  B_1B_F1  B_1B_F4  B_1B_F3  B_2B_F1  B_2B_F2  B_2B_F3  B_2B_F4  
+IN F16  I01L_04_09  RX02_04  B_8B_M2  B_8B_M1  B_8B_M4  B_8B_M3  B_7B_M4  B_7B_M3  B_7B_M1  B_7B_M2  
+IN F17  I01L_04_08  RX02_05  B_3B_F1  B_3B_F2  B_3B_F3  B_3B_F4  B_4B_F1  B_4B_F2  B_4B_F4  B_4B_F3  
+IN F18  I01L_04_07  RX02_06  B_6B_M3  B_6B_M4  B_6B_M1  B_6B_M2  B_5B_M2  B_5B_M1  B_5B_M4  B_5B_M3  
+IN F19  I01L_04_06  RX02_07  B_5B_F2  B_5B_F1  B_5B_F3  B_5B_F4  B_6B_F4  B_6B_F3  B_6B_F1  B_6B_F2  
+IN F20  I01L_04_05  RX02_08  B_3B_M1  B_3B_M2  B_3B_M3  B_3B_M4  B_4B_M4  B_4B_M3  B_4B_M1  B_4B_M2  
+IN F21  I01L_04_04  RX02_09  B_7B_F2  B_7B_F1  B_7B_F3  B_7B_F4  B_8B_F2  B_8B_F1  B_8B_F4  B_8B_F3  
+IN F22  I01L_04_03  RX02_10  B_7B_P1  B_8B_P1  B_6B_P1  B_5B_P1  B_2B_P1  B_1B_P1  B_3B_P1  B_4B_P1  
+IN F23  I01L_04_02  RX02_11  B_1B_M2  B_1B_M1  B_1B_M3  B_1B_M4  B_2B_M4  B_2B_M3  B_2B_M1  B_2B_M2  
+IN F24  I01L_04_01  RX02_12  B_7B_B1  B_8B_B1  B_6B_B1  B_5B_B1  B_1B_B1  B_2B_B1  B_3B_B1  B_4B_B1  
+IN F27  I02R_01_10  RX03_03  B_1C_B1  B_2C_B1  B_4C_B1  B_3C_B1  B_6C_B1  B_5C_B1  B_8C_B1  B_7C_B1  
+IN F28  I02R_01_09  RX03_04  B_2C_M2  B_2C_M1  B_2C_M4  B_2C_M3  B_1C_M3  B_1C_M4  B_1C_M1  B_1C_M2  
+IN F29  I02R_01_08  RX03_05  B_3C_M1  B_3C_M2  B_3C_M4  B_3C_M3  B_4C_M4  B_4C_M3  B_4C_M2  B_4C_M1  
+IN F30  I02R_01_07  RX03_06  B_6C_F4  B_6C_F3  B_6C_F2  B_6C_F1  B_5C_F1  B_5C_F2  B_5C_F3  B_5C_F4  
+IN F31  I02R_01_06  RX03_07  B_7C_M1  B_7C_M2  B_7C_M3  B_7C_M4  B_8C_M3  B_8C_M4  B_8C_M2  B_8C_M1  
+IN F32  I02R_01_05  RX03_08  B_8C_P1  B_7C_P1  B_5C_P1  B_6C_P1  B_4C_P1  B_3C_P1  B_2C_P1  B_1C_P1  
+IN F33  I02R_01_04  RX03_09  B_5C_M1  B_5C_M2  B_5C_M3  B_5C_M4  B_6C_M4  B_6C_M3  B_6C_M1  B_6C_M2  
+IN F34  I02R_01_03  RX03_10  B_4C_F1  B_4C_F2  B_4C_F4  B_4C_F3  B_3C_F4  B_3C_F3  B_3C_F2  B_3C_F1  
+IN F35  I02R_01_02  RX03_11  B_7C_F1  B_7C_F2  B_7C_F3  B_7C_F4  B_8C_F1  B_8C_F2  B_8C_F4  B_8C_F3  
+IN F36  I02R_01_01  RX03_12  B_2C_F3  B_2C_F4  B_2C_F2  B_2C_F1  B_1C_F4  B_1C_F3  B_1C_F2  B_1C_F1  
+IN F39  I02R_04_10  RX04_03  B_1D_F2  B_1D_F1  B_1D_F4  B_1D_F3  B_2D_F1  B_2D_F2  B_2D_F3  B_2D_F4  
+IN F40  I02R_04_09  RX04_04  B_8D_M2  B_8D_M1  B_8D_M4  B_8D_M3  B_7D_M4  B_7D_M3  B_7D_M1  B_7D_M2  
+IN F41  I02R_04_08  RX04_05  B_3D_F1  B_3D_F2  B_3D_F3  B_3D_F4  B_4D_F1  B_4D_F2  B_4D_F4  B_4D_F3  
+IN F42  I02R_04_07  RX04_06  B_6D_M3  B_6D_M4  B_6D_M1  B_6D_M2  B_5D_M2  B_5D_M1  B_5D_M4  B_5D_M3  
+IN F43  I02R_04_06  RX04_07  B_5D_F2  B_5D_F1  B_5D_F3  B_5D_F4  B_6D_F4  B_6D_F3  B_6D_F1  B_6D_F2  
+IN F44  I02R_04_05  RX04_08  B_3D_M1  B_3D_M2  B_3D_M3  B_3D_M4  B_4D_M4  B_4D_M3  B_4D_M1  B_4D_M2  
+IN F45  I02R_04_04  RX04_09  B_7D_F2  B_7D_F1  B_7D_F3  B_7D_F4  B_8D_F2  B_8D_F1  B_8D_F4  B_8D_F3  
+IN F46  I02R_04_03  RX04_10  B_7D_P1  B_8D_P1  B_6D_P1  B_5D_P1  B_2D_P1  B_1D_P1  B_3D_P1  B_4D_P1  
+IN F47  I02R_04_02  RX04_11  B_1D_M2  B_1D_M1  B_1D_M3  B_1D_M4  B_2D_M4  B_2D_M3  B_2D_M1  B_2D_M2  
+
+
+# Output information section
+# Number connected output fibers: 38 (unique=19)
+# Number eFEX fibers: 30 (unique=16)
+# Number jFEX fibers: 6 (unique=2)
+# Number gFEX fibers: 2 (unique=1)
+# hash_ID Type C1 C2 .... 
+OUT F1   eFEX   B_7A          B_8A          
+OUT F5   eFEX   B_7A          B_8A          
+OUT F2   eFEX   B_1A          B_2A          
+OUT F3   eFEX   B_3A          B_4A          
+OUT F4   eFEX   B_5A          B_6A          
+OUT F7   eFEX   B_7B          B_8B          
+OUT F11  eFEX   B_7B          B_8B          
+OUT F13  eFEX   B_7B          B_8B          
+OUT F17  eFEX   B_7B          B_8B          
+OUT F8   eFEX   B_1B          B_2B          
+OUT F14  eFEX   B_1B          B_2B          
+OUT F9   eFEX   B_3B          B_4B          
+OUT F15  eFEX   B_3B          B_4B          
+OUT F10  eFEX   B_5B          B_6B          
+OUT F16  eFEX   B_5B          B_6B          
+OUT F19  eFEX   B_7C          B_8C          
+OUT F23  eFEX   B_7C          B_8C          
+OUT F25  eFEX   B_7C          B_8C          
+OUT F29  eFEX   B_7C          B_8C          
+OUT F20  eFEX   B_1C          B_2C          
+OUT F26  eFEX   B_1C          B_2C          
+OUT F21  eFEX   B_3C          B_4C          
+OUT F27  eFEX   B_3C          B_4C          
+OUT F22  eFEX   B_5C          B_6C          
+OUT F28  eFEX   B_5C          B_6C          
+OUT F31  eFEX   B_7D          B_8D          
+OUT F35  eFEX   B_7D          B_8D          
+OUT F32  eFEX   B_1D          B_2D          
+OUT F33  eFEX   B_3D          B_4D          
+OUT F34  eFEX   B_5D          B_6D          
+OUT F37  jFEX   B_1A          B_1B          B_1C          B_1D          B_2A          B_2B          B_2C          B_2D          B_3A          B_3B          B_3C          B_3D          B_4A          B_4B          B_4C          B_4D          
+OUT F38  jFEX   B_1A          B_1B          B_1C          B_1D          B_2A          B_2B          B_2C          B_2D          B_3A          B_3B          B_3C          B_3D          B_4A          B_4B          B_4C          B_4D          
+OUT F39  jFEX   B_1A          B_1B          B_1C          B_1D          B_2A          B_2B          B_2C          B_2D          B_3A          B_3B          B_3C          B_3D          B_4A          B_4B          B_4C          B_4D          
+OUT F41  jFEX   B_5A          B_5B          B_5C          B_5D          B_6A          B_6B          B_6C          B_6D          B_7A          B_7B          B_7C          B_7D          B_8A          B_8B          B_8C          B_8D          
+OUT F42  jFEX   B_5A          B_5B          B_5C          B_5D          B_6A          B_6B          B_6C          B_6D          B_7A          B_7B          B_7C          B_7D          B_8A          B_8B          B_8C          B_8D          
+OUT F43  jFEX   B_5A          B_5B          B_5C          B_5D          B_6A          B_6B          B_6C          B_6D          B_7A          B_7B          B_7C          B_7D          B_8A          B_8B          B_8C          B_8D          
+OUT F47  gFEX   B_1A+B_2A+B_1B+B_2B  B_1C+B_2C+B_1D+B_2D  B_3A+B_4A+B_3B+B_4B  B_3C+B_4C+B_3D+B_4D  B_5A+B_6A+B_5B+B_6B  B_5C+B_6C+B_5D+B_6D  B_7A+B_8A+B_7B+B_8B  B_7C+B_8C+B_7D+B_8D  
+OUT F48  gFEX   B_1A+B_2A+B_1B+B_2B  B_1C+B_2C+B_1D+B_2D  B_3A+B_4A+B_3B+B_4B  B_3C+B_4C+B_3D+B_4D  B_5A+B_6A+B_5B+B_6B  B_5C+B_6C+B_5D+B_6D  B_7A+B_8A+B_7B+B_8B  B_7C+B_8C+B_7D+B_8D  
