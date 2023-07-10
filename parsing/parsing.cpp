@@ -60,6 +60,31 @@ vector<string> processFile(const string &fileUrl)
     return elementsArray;
 }
 
+void printProcessFile()
+{
+    const string baseDir = "../assets/"; // Change the directory accordingly
+    vector<string> fileNamesForProcessFile = {
+        "EMBA_1" // Add the file names you want to process with the processFile function
+    };
+
+    for (const string& fileName : fileNamesForProcessFile) {
+        string fileUrl = baseDir + fileName + ".txt";
+        vector<string> elementsArray = processFile(fileUrl);
+
+        cout << "Processing file with processFile: " << fileName << ".txt" << endl;
+
+        size_t inNumber = 1;
+        for (size_t i = 0; i < elementsArray.size(); i++) {
+            cout << "IN F" << inNumber << " Element: " << elementsArray[i] << endl;
+            if ((i + 1) % 8 == 0) {
+                inNumber++;
+            }
+        }
+
+        cout << "Size of elementsArray: " << elementsArray.size() << endl << endl;
+    }
+}
+
 vector<string> process_pu_list_latome(const string &fileUrl)
 {
     ifstream file(fileUrl);
@@ -113,6 +138,31 @@ vector<string> process_pu_list_latome(const string &fileUrl)
     file.close();
 
     return elementsArray;
+}
+
+void printProcessPuListLatome()
+{
+    const string baseDir = "../assets/"; // Change the directory accordingly
+    vector<string> fileNamesForProcessPuListLatome = {
+        "pu_list_latome" // Add the file names you want to process with the processPuListLatome function
+    };
+    
+    for (const string& fileName : fileNamesForProcessPuListLatome) {
+        string fileUrl = baseDir + fileName + ".txt";
+        vector<string> elementsArray = process_pu_list_latome(fileUrl);
+
+        cout << "Processing file with processPuListLatome: " << fileName << ".txt" << endl;
+
+        size_t puNumber = 1;
+        for (size_t i = 0; i < elementsArray.size(); i++) {
+            cout << "PU" << puNumber << " Element: " << elementsArray[i] << endl;
+            if ((i + 1) % 6 == 0) {
+                puNumber++;
+            }
+        }
+
+        cout << "Size of elementsArray: " << elementsArray.size() << endl << endl;
+    }
 }
 
 vector<string> process_osum_map_full(const string &fileUrl)
@@ -189,80 +239,38 @@ vector<string> process_osum_map_full(const string &fileUrl)
 
     return elementsArray;
 }
-
-int main()
+void printProcessOsumMapFull()
 {
     const string baseDir = "../assets/"; // Change the directory accordingly
-    vector<string> fileNamesForProcessFile = {
-        "EMBA_1" // Add the file names you want to process with the processFile function
+    vector<string> fileNamesForProcessOsumMappingFull = {
+        "osum_map_full" // Add the file names you want to process with the processOsumMappingFull function
     };
 
-    vector<string> fileNamesForProcessPUList = {
-        "pu_list_latome" // Add the file names you want to process with the process_pu_list_latome function
-    };
-
-    vector<string> fileNamesForProcessOSUMMappingFull = {
-        "osum_map_full" // Add the file names you want to process with the process_osum_mapping_full function
-    };
-
-    // Process files using processFile function
-    for (const string& fileName : fileNamesForProcessFile) {
-        string fileUrl = baseDir + fileName + ".txt";
-        vector<string> elementsArray = processFile(fileUrl);
-
-        cout << "Processing file with processFile: " << fileName << ".txt" << endl;
-
-        size_t inNumber = 1;
-        for (size_t i = 0; i < elementsArray.size(); i++) {
-            cout << "IN F" << inNumber << " Element: " << elementsArray[i] << endl;
-            if ((i + 1) % 8 == 0) {
-                inNumber++;
-            }
-        }
-
-        cout << "Size of elementsArray: " << elementsArray.size() << endl << endl;
-    }
-
-    // Process files using process_pu_list_latome function
-    for (const string& fileName : fileNamesForProcessPUList) {
-        string fileUrl = baseDir + fileName + ".txt";
-        vector<string> elementsArray = process_pu_list_latome(fileUrl);
-
-        cout << "Processing file with process_pu_list_latome: " << fileName << ".txt" << endl;
-
-        size_t puNumber = 1;
-        for (size_t i = 0; i < elementsArray.size(); i++) {
-            cout << "PU" << puNumber << " Element: " << elementsArray[i] << endl;
-            if ((i + 1) % 6 == 0) {
-                puNumber++;
-            }
-        }
-
-        cout << "Size of elementsArray: " << elementsArray.size() << endl << endl;
-    }
-
-    // Process files using process_osum_map_full function
-    for (const string &fileName : fileNamesForProcessOSUMMappingFull)
-    {
+    for (const string& fileName : fileNamesForProcessOsumMappingFull) {
         string fileUrl = baseDir + fileName + ".txt";
         vector<string> elementsArray = process_osum_map_full(fileUrl);
 
-        cout << "Processing file with process_osum_map_full: " << fileName << ".txt" << endl;
+        cout << "Processing file with processOsumMappingFull: " << fileName << ".txt" << endl;
 
-        size_t puNumber = 1;
-        size_t elementNumber = 0;
-        for (size_t i = 0; i < elementsArray.size(); i++)
-        {
-            cout << "F" << puNumber << " Element " << elementNumber << ": " << elementsArray[i] << endl;
-
-            elementNumber++;
-            if (elementNumber == 20)
-            {
-                puNumber++;
-                elementNumber = 0;
+        size_t fNumber = 1;
+        for (size_t i = 0; i < elementsArray.size(); i++) {
+            cout << "F" << fNumber << " Element: " << elementsArray[i] << endl;
+            if ((i + 1) % 20 == 0) {
+                fNumber++;
             }
         }
-    }
 
+        cout << "Size of elementsArray: " << elementsArray.size() << endl << endl;
+    }
+}
+
+
+int main()
+{   
+    // COMENT AND UNCOMMENT FOR BETTER READABILITY
+    //printProcessFile();
+    //printProcessPuListLatome();
+    printProcessOsumMapFull();
+    
     return 0;
 }
